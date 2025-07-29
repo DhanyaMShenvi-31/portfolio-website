@@ -1,34 +1,95 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
-  color: #123
+  color: #123;
+  line-height: 1.6;
 }
-header{
-    background-color: #007BFF;
-    COLOR:WHITE;
-    text-align: center;
-    padding: 20px;
+
+/* Header */
+header {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
 }
-section{
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 2em;
 }
-ul{
-    list-style-type: none;
-    padding: 0;
+
+header p {
+  font-size: 1.1em;
 }
-ul li{
-    margin: 10px 0;
+
+/* Section Styling */
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+section h2 {
+  color: #007BFF;
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+section h3 {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+/* Links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   background: #333;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px 10px;
+  font-size: 0.9em;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  section {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+}
